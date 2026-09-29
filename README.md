@@ -1,4 +1,4 @@
-# jynx
+# Jynx
 
 Personal developer portfolio website.
 

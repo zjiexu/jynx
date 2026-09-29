@@ -54,11 +54,30 @@ function App() {
 
         <div className="project-list">
           <article className="project-card">
-            <p className="project-type">Portfolio Website</p>
-            <h3>Jynx</h3>
-            <p>
-              A personal developer portfolio built to practice frontend structure, responsive design, and project presentation.
+            <div className="project-header">
+              <div>
+                <p className="project-type">Portfolio Website</p>
+                <h3>Jynx</h3>
+              </div>
+              
+              <span className="project-status">In Progress</span>
+            </div>
+
+            <p className="project-description">
+              A personal developer portfolio built to practice frontend structure, responsive design, version control, and GitHub Pages deployment.
             </p>
+
+            <ul className="project-tools" aria-label="Technologies used">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Vite</li>
+              <li>CSS</li>
+            </ul>
+
+            <div className="project-links">
+              <a href="https://github.com/zjiexu/jynx">GitHub</a>
+              <a href="https://zjiexu.github.io/jynx/">Live Site</a>
+            </div>
           </article>
         </div>
       </section>

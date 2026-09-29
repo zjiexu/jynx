@@ -1,5 +1,23 @@
 import './App.css'
 
+const learningAreas = [
+  {
+    title: 'Frontend Foundations',
+    description:
+      'HTML, CSS, JavaScript, responsive layouts, and accessible interface structure.',
+  },
+  {
+    title: 'React Development',
+    description:
+      'Components, props, state, TypeScript, and building maintainable single-page applications.',
+  },
+  {
+    title: 'Developer Workflow',
+    description:
+      'Git, GitHub, project organization, deployment, and writing clearer documentation.',
+  },
+]
+
 function App() {
   return (
     <main className="site-shell">
@@ -88,14 +106,14 @@ function App() {
           <h2>Currently Learning</h2>
         </div>
 
-        <ul className="skill-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Git and GitHub</li>
-        </ul>
+        <div className="learning-grid">
+          {learningAreas.map((area) => (
+            <article className="learning-card" key={area.title}>
+              <h3>{area.title}</h3>
+              <p>{area.description}</p>
+            </article>
+          ))}
+        </div>
       </section>
 
       <section className="content-section" id="contact">

@@ -1,20 +1,12 @@
+import Footer from './components/Footer'
+import Header from './components/Header'
 import { contactLinks, learningAreas, projects } from './data'
 import './App.css'
 
 function App() {
   return (
     <main className="site-shell">
-      <header className="site-header">
-        <a className="site-name" href="/">
-          Jynx
-        </a>
-
-        <nav className="site-nav" aria-label="Main navigation">
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </header>
+      <Header />
 
       <section className="intro-section">
         <div className="intro-content">
@@ -127,10 +119,7 @@ function App() {
         </div>
       </section>
 
-      <footer className="site-footer">
-        <p>Built by Zhijie.</p>
-        <p>Deployed with GitHub Pages.</p>
-      </footer>
+      <Footer />
     </main>
   )
 }

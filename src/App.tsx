@@ -9,7 +9,7 @@ import './App.css'
 
 function App() {
   return (
-    <main className="site-shell">
+    <main className="site-shell" id="top">
       <Header />
       <IntroSection />
       <ProjectsSection projects={projects} />

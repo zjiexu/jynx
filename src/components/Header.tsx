@@ -1,7 +1,7 @@
 function Header() {
   return (
     <header className="site-header">
-      <a className="site-name" href="/">
+      <a className="site-name" href="#top">
         Jynx
       </a>
 

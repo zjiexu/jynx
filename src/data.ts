@@ -1,4 +1,29 @@
-export const learningAreas = [
+type LearningArea = {
+  title: string
+  description: string
+}
+
+type ProjectLink = {
+  label: string
+  url: string
+}
+
+type Project = {
+  type: string
+  title: string
+  status: string
+  description: string
+  tools: string[]
+  links: ProjectLink[]
+}
+
+type ContactLink = {
+  label: string
+  url: string
+  isExternal: boolean
+}
+
+export const learningAreas: LearningArea[] = [
   {
     title: 'Frontend Foundations',
     description:
@@ -16,7 +41,7 @@ export const learningAreas = [
   },
 ]
 
-export const projects = [
+export const projects: Project[] = [
   {
     type: 'Portfolio Website',
     title: 'Jynx',
@@ -37,7 +62,7 @@ export const projects = [
   },
 ]
 
-export const contactLinks = [
+export const contactLinks: ContactLink[] = [
   {
     label: 'GitHub',
     url: 'https://github.com/zjiexu',

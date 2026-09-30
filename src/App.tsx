@@ -18,6 +18,27 @@ const learningAreas = [
   },
 ]
 
+const projects = [
+  {
+    type: 'Portfolio Website',
+    title: 'Jynx',
+    status: 'In Progress',
+    description:
+      'A personal developer portfolio built to practice frontend structure, responsive design, version control, and GitHub Pages deployment.',
+    tools: ['React', 'TypeScript', 'Vite', 'CSS'],
+    links: [
+      {
+        label: 'GitHub',
+        url: 'https://github.com/zjiexu/jynx',
+      },
+      {
+        label: 'Live Site',
+        url: 'https://zjiexu.github.io/jynx/',
+      },
+    ],
+  },
+]
+
 function App() {
   return (
     <main className="site-shell">
@@ -71,32 +92,34 @@ function App() {
         </div>
 
         <div className="project-list">
-          <article className="project-card">
-            <div className="project-header">
-              <div>
-                <p className="project-type">Portfolio Website</p>
-                <h3>Jynx</h3>
+          {projects.map((project) => (
+            <article className="project-card" key={project.title}>
+              <div className="project-header">
+                <div>
+                  <p className="project-type">{project.type}</p>
+                  <h3>{project.title}</h3>
+                </div>
+
+                <span className="project-status">{project.status}</span>
               </div>
-              
-              <span className="project-status">In Progress</span>
-            </div>
 
-            <p className="project-description">
-              A personal developer portfolio built to practice frontend structure, responsive design, version control, and GitHub Pages deployment.
-            </p>
+              <p className="project-description">{project.description}</p>
 
-            <ul className="project-tools" aria-label="Technologies used">
-              <li>React</li>
-              <li>TypeScript</li>
-              <li>Vite</li>
-              <li>CSS</li>
-            </ul>
+              <ul className="project-tools" aria-label={`${project.title} technologies`}>
+                {project.tools.map((tool) => (
+                  <li key={tool}>{tool}</li>
+                ))}
+              </ul>
 
-            <div className="project-links">
-              <a href="https://github.com/zjiexu/jynx">GitHub</a>
-              <a href="https://zjiexu.github.io/jynx/">Live Site</a>
-            </div>
-          </article>
+              <div className="project-links">
+                {project.links.map((link) => (
+                  <a href={link.url} key={link.label}>
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            </article>
+          ))}
         </div>
       </section>
 

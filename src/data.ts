@@ -1,4 +1,4 @@
-type LearningArea = {
+export type LearningArea = {
   title: string
   description: string
 }
@@ -8,7 +8,7 @@ type ProjectLink = {
   url: string
 }
 
-type Project = {
+export type Project = {
   type: string
   title: string
   status: string
@@ -17,7 +17,7 @@ type Project = {
   links: ProjectLink[]
 }
 
-type ContactLink = {
+export type ContactLink = {
   label: string
   url: string
   isExternal: boolean

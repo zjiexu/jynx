@@ -1,6 +1,9 @@
 .site-shell {
   min-height: 100vh;
-  background: #080808;
+  background:
+    radial-gradient(circle at top left, rgba(181, 155, 106, 0.12), transparent 34rem),
+    radial-gradient(circle at 80% 20%, rgba(242, 239, 232, 0.06), transparent 28rem),
+    #080808;
   color: #f2efe8;
 }
 
@@ -47,6 +50,7 @@
   align-items: center;
   gap: 64px;
   padding: 120px 48px 64px;
+  border-bottom: 1px solid rgba(242, 239, 232, 0.08);
 }
 
 .intro-content {

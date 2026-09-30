@@ -39,6 +39,24 @@ const projects = [
   },
 ]
 
+const contactLinks = [
+  {
+    label: 'GitHub',
+    url: 'https://github.com/zjiexu',
+    isExternal: true,
+  },
+  {
+    label: 'Email',
+    url: 'mailto:zjiexu@gmail.com',
+    isExternal: false,
+  },
+  {
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/zjiexu/',
+    isExternal: true,
+  },
+]
+
 function App() {
   return (
     <main className="site-shell">
@@ -145,9 +163,24 @@ function App() {
           <h2>Let's Connect</h2>
         </div>
 
-        <p className="contact-text">
-          I am currently building my software engineering portfolio and open to learning opportunities, collaboration, and feedback.
-        </p>
+        <div className="contact-content">
+          <p className="contact-text">
+            I am currently building my software engineering portfolio and open to learning opportunities, collaboration, and feedback.
+          </p>
+
+          <div className="contact-links">
+            {contactLinks.map((link) => (
+              <a
+                href={link.url}
+                key={link.label}
+                target={link.isExternal ? '_blank' : undefined}
+                rel={link.isExternal ? 'noreferrer' : undefined}
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
       </section>
     </main>
   )

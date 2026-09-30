@@ -259,12 +259,40 @@ h1 {
   line-height: 1.7;
 }
 
+.contact-content {
+  max-width: 680px;
+}
+
 .contact-text {
-  max-width: 640px;
   margin: 0;
   color: #b8b0a3;
   font-size: 1.1rem;
   line-height: 1.7;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px;
+  border: 1px solid rgba(242, 239, 232, 0.18);
+  color: #f2efe8;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  border-color: rgba(181, 155, 106, 0.52);
+  color: #b59b6a;
 }
 
 @media (max-width: 820px) {

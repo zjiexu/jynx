@@ -26,6 +26,11 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
 
             <p className="project-description">{project.description}</p>
 
+            <div className="project-learning">
+              <p className="project-learning-label">Key Learning</p>
+              <p>{project.learning}</p>
+            </div>
+
             <ul className="project-tools" aria-label={`${project.title} technologies`}>
               {project.tools.map((tool) => (
                 <li key={tool}>{tool}</li>

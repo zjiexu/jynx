@@ -201,6 +201,28 @@ h1 {
   line-height: 1.7;
 }
 
+.project-learning {
+  max-width: 560px;
+  margin-top: 22px;
+  padding-left: 16px;
+  border-left: 2px solid rgba(181, 155, 106, 0.42);
+}
+
+.project-learning-label {
+  margin: 0 0 8px;
+  color: #b59b6a;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-learning p:last-child {
+  margin: 0;
+  color: #d8d1c6;
+  line-height: 1.7;
+}
+
 .project-tools {
   display: flex;
   flex-wrap: wrap;

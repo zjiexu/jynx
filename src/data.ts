@@ -13,6 +13,7 @@ export type Project = {
   title: string
   status: string
   description: string
+  learning: string
   tools: string[]
   links: ProjectLink[]
 }
@@ -48,6 +49,8 @@ export const projects: Project[] = [
     status: 'In Progress',
     description:
       'A personal developer portfolio built to practice frontend structure, responsive design, version control, and GitHub Pages deployment.',
+    learning:
+      'Practiced component-based structure, responsive layout, GitHub Pages deployment, and typed data rendering with TypeScript.',
     tools: ['React', 'TypeScript', 'Vite', 'CSS'],
     links: [
       {

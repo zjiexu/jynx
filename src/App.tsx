@@ -182,6 +182,11 @@ function App() {
           </div>
         </div>
       </section>
+
+      <footer className="site-footer">
+        <p>Built by Zhijie.</p>
+        <p>Deployed with GitHub Pages.</p>
+      </footer>
     </main>
   )
 }

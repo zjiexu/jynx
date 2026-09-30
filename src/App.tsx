@@ -1,5 +1,6 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
+import LearningSection from './components/LearningSection'
 import ProjectsSection from './components/ProjectsSection'
 import { contactLinks, learningAreas, projects } from './data'
 import './App.css'
@@ -42,21 +43,7 @@ function App() {
 
       <ProjectsSection projects={projects} />
 
-      <section className="content-section" id="skills">
-        <div className="section-heading">
-          <p className="section-label">Skills</p>
-          <h2>Currently Learning</h2>
-        </div>
-
-        <div className="learning-grid">
-          {learningAreas.map((area) => (
-            <article className="learning-card" key={area.title}>
-              <h3>{area.title}</h3>
-              <p>{area.description}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+      <LearningSection areas={learningAreas} />
 
       <section className="content-section" id="contact">
         <div className="section-heading">

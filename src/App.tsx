@@ -113,7 +113,7 @@ function App() {
 
               <div className="project-links">
                 {project.links.map((link) => (
-                  <a href={link.url} key={link.label}>
+                  <a href={link.url} key={link.label} target="_blank" rel="noreferrer">
                     {link.label}
                   </a>
                 ))}

@@ -1,3 +1,4 @@
+import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import LearningSection from './components/LearningSection'
@@ -45,31 +46,7 @@ function App() {
 
       <LearningSection areas={learningAreas} />
 
-      <section className="content-section" id="contact">
-        <div className="section-heading">
-          <p className="section-label">Contact</p>
-          <h2>Let's Connect</h2>
-        </div>
-
-        <div className="contact-content">
-          <p className="contact-text">
-            I am currently building my software engineering portfolio and open to learning opportunities, collaboration, and feedback.
-          </p>
-
-          <div className="contact-links">
-            {contactLinks.map((link) => (
-              <a
-                href={link.url}
-                key={link.label}
-                target={link.isExternal ? '_blank' : undefined}
-                rel={link.isExternal ? 'noreferrer' : undefined}
-              >
-                {link.label}
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
+      <ContactSection links={contactLinks} />
 
       <Footer />
     </main>

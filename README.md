@@ -25,6 +25,28 @@ https://zjiexu.github.io/jynx/
 - Dark minimalist visual design
 - GitHub Pages deployment
 
+## Project Structure
+
+```text
+src/
+  components/
+    ContactSection.tsx
+    Footer.tsx
+    Header.tsx
+    IntroSection.tsx
+    LearningSection.tsx
+    ProjectsSection.tsx
+  App.tsx
+  App.css
+  data.ts
+  index.css
+  main.tsx
+```
+
+- `src/App.tsx` composes the main page sections.
+- `src/components/` contains reusable UI sections.
+- `src/data.ts` stores typed portfolio content used by the page.
+
 ## Getting Started
 
 Install dependencies:

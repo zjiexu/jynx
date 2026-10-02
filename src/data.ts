@@ -63,6 +63,17 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    type: 'Static Site Generator',
+    title: 'Inkwell',
+    status: 'Planned',
+    description:
+      'A planned Markdown blog engine that turns Markdown files into fast static blog pages with tags, RSS, SEO metadata, and free deployment.',
+    learning:
+      'Intended to practice file-based content, Markdown parsing, static page generation, metadata handling, RSS output, and performance-focused deployment.',
+    tools: ['TypeScript', 'Markdown', 'Static Rendering', 'RSS', 'SEO'],
+    links: [],
+  },
 ]
 
 export const contactLinks: ContactLink[] = [

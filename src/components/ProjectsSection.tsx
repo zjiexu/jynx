@@ -37,13 +37,15 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
               ))}
             </ul>
 
-            <div className="project-links">
-              {project.links.map((link) => (
-                <a href={link.url} key={link.label} target="_blank" rel="noreferrer">
-                  {link.label}
-                </a>
-              ))}
-            </div>
+            {project.links.length > 0 && (
+              <div className="project-links">
+                {project.links.map((link) => (
+                  <a href={link.url} key={link.label} target="_blank" rel="noreferrer">
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </div>

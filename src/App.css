@@ -158,6 +158,19 @@ h1 {
   font-weight: 600;
 }
 
+.about-content {
+  display: grid;
+  gap: 18px;
+  max-width: 720px;
+}
+
+.about-content p {
+  margin: 0;
+  color: #b8b0a3;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
 .project-list {
   display: grid;
   grid-template-columns: minmax(0, 680px);
@@ -410,19 +423,6 @@ h1 {
 
   .section-heading h2 {
     font-size: 2rem;
-  }
-
-  .about-content {
-    display: grid;
-    gap: 18px;
-    max-width: 720px;
-  }
-
-  .about-content p {
-    margin: 0;
-    color: #b8b0a3;
-    font-size: 1.1rem;
-    line-height: 1.8;
   }
 
   .learning-grid {

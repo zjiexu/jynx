@@ -1,3 +1,4 @@
+import AboutSection from './components/AboutSection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -12,6 +13,7 @@ function App() {
     <main className="site-shell" id="top">
       <Header />
       <IntroSection />
+      <AboutSection />
       <ProjectsSection projects={projects} />
       <LearningSection areas={learningAreas} />
       <ContactSection links={contactLinks} />

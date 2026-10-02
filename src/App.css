@@ -412,6 +412,19 @@ h1 {
     font-size: 2rem;
   }
 
+  .about-content {
+    display: grid;
+    gap: 18px;
+    max-width: 720px;
+  }
+
+  .about-content p {
+    margin: 0;
+    color: #b8b0a3;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
   .learning-grid {
     grid-template-columns: 1fr;
   }

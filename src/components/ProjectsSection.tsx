@@ -4,6 +4,10 @@ type ProjectsSectionProps = {
   projects: Project[]
 }
 
+function getStatusClassName(status: string) {
+  return `project-status project-status-${status.toLowerCase().replaceAll(' ', '-')}`
+}
+
 function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
     <section className="content-section" id="projects">
@@ -21,7 +25,7 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
                 <h3>{project.title}</h3>
               </div>
 
-              <span className="project-status">{project.status}</span>
+              <span className={getStatusClassName(project.status)}>{project.status}</span>
             </div>
 
             <p className="project-description">{project.description}</p>

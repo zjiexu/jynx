@@ -27,7 +27,7 @@ function ProjectsSection({ projects }: ProjectsSectionProps) {
             <p className="project-description">{project.description}</p>
 
             <div className="project-learning">
-              <p className="project-learning-label">Key Learning</p>
+              <p className="project-learning-label">What I Practiced</p>
               <p>{project.learning}</p>
             </div>
 

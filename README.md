@@ -21,9 +21,10 @@ https://zjiexu.github.io/jynx/
 ## Features
 
 - Responsive portfolio homepage with desktop and mobile layouts
+- Mobile navigation that wraps cleanly on small screens
 - Component-based React structure
 - Typed portfolio data with TypeScript
-- Project, learning, and contact sections
+- About, project, learning, and contact sections
 - Project cards with tools, links, and key learning notes
 - Dark minimalist visual design with subtle interaction states
 - GitHub Pages deployment

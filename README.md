@@ -25,7 +25,8 @@ https://zjiexu.github.io/jynx/
 - Component-based React structure
 - Typed portfolio data with TypeScript
 - About, project, learning, and contact sections
-- Project cards with tools, links, and key learning notes
+- Project cards with tools, links, status labels, and key learning notes
+- Planned project roadmap entry for future portfolio growth
 - Dark minimalist visual design with subtle interaction states
 - GitHub Pages deployment
 
